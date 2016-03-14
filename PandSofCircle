@@ -1,0 +1,18 @@
+/*
+Write a program that reads the radius r of a circle and prints its perimeter and area.
+*/
+using System;
+
+class PandSofCircle
+{
+    static void Main()
+    {
+        Console.Write("Vyvedete radiusa na okryjnostta r=");
+        double r = double.Parse(Console.ReadLine());
+        double pi = Math.PI;
+        double s = pi * r * r;
+        double p = 2 * pi * r;
+        Console.WriteLine("Obikolkata na okryjnostta e ravna na {0}",p);
+        Console.WriteLine("Liceto na okryjnostta e ravno na {0}", s);
+    }
+}
