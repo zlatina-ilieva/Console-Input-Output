@@ -1,0 +1,33 @@
+/*
+A company has name, address, phone number, fax number, web site and manager. The manager has first name, last name, age and a phone number.
+Write a program that reads the information about a company and its manager and prints them on the console.
+*/
+using System;
+
+class CompanyInformation
+{
+    static void Main()
+    {
+        Console.Write("Vyvedete pyrvo ime na manager-a: ");
+        string FirstNameManager = Console.ReadLine();
+        Console.Write("Vyvedete familiq na manager-a: ");
+        string LastNameManager = Console.ReadLine();
+        Console.Write("Vyvedete godini na manager-a: ");
+        string AgeOfManager = Console.ReadLine();
+        Console.Write("Vyvedete telefon na manager-a: ");
+        string PhoneOfManager = Console.ReadLine();
+
+        Console.Write("Vyvedete ime na kompaniqta: ");
+        string company = Console.ReadLine();
+        Console.Write("Vyvedete adres n a kompaniqta: ");
+        string addressCompany = Console.ReadLine();
+        Console.Write("Vyvedete telefon na kompaniqta: ");
+        string phoneCompany = Console.ReadLine();
+        Console.Write("Vyvedete fax na kompaniqta: ");
+        string faxCompany = Console.ReadLine();
+        Console.Write("Vyvedete website na kompaniqta: ");
+        string websiteCompany = Console.ReadLine();
+        Console.WriteLine(" Companiqta {0} ima adres {1}, telefon {2}, fax {3}, website {4} i manager, koito se kazva {5} {6} na {7} godini i ima telefon {8}"
+            , company, addressCompany, phoneCompany, faxCompany, websiteCompany, FirstNameManager, LastNameManager, AgeOfManager, PhoneOfManager);
+    }
+    }
